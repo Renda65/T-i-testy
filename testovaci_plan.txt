@@ -1,0 +1,46 @@
+# Testovací plán – Automatizované testy RZP.gov.cz a KCHT.cz
+
+## 1. Cíl testování
+Ověřit funkčnost klíčových částí webových aplikací www.rzp.gov.cz a www.kcht.cz pomocí automatizovaných testů v Playwrightu.
+
+## 2. Testované oblasti
+- Ověření viditelnosti a funkčnosti hlavních tlačítek na RZP.gov.cz
+- Vyhledání subjektu podle názvu
+- Vyhledání subjektu podle kódu živnosti a místa
+- Ověření chování přihlašovacího formuláře na KCHT.cz
+
+## 3. Testovací scénáře
+
+### 3.1 Funkčnost hlavních tlačítek (test_prvni.py)
+- Ověřit, že tlačítka „Vyhledání podnikatele“, „Adresář úřadů“ a „Žádost o výpis“ jsou viditelná.
+- Ověřit, že kliknutí na každé tlačítko vede na správnou stránku.
+
+### 3.2 Vyhledání subjektu podle názvu (test_druhy.py)
+- Ověřit existenci inputu pro název subjektu.
+- Vyplnit pole hodnotou „Novakova“ a potvrdit Enterem.
+- Ověřit, že hodnota byla správně zapsána.
+
+### 3.3 Vyhledání subjektu podle kódu živnosti a místa (test_tri.py)
+- Vyplnit pole pro kód živnosti a místo.
+- Potvrdit výběr místa.
+- Kliknout na „VYHLEDAT SUBJEKTY“.
+- Ověřit, že se zobrazí stránka s výsledky (změna URL).
+
+### 3.4 Přihlášení na KCHT.cz (test_prihlaseni.py)
+- Vyplnit pole pro jméno a heslo neplatnými údaji.
+- Kliknout na tlačítko pro přihlášení.
+- Ověřit, že se zobrazí chybová hlášení a uživatel zůstane na přihlašovací stránce.
+
+## 4. Požadavky na prostředí
+- Python 3.8+
+- Playwright
+- pytest
+- Stabilní internetové připojení
+
+## 5. Postup spuštění testů
+- Instalace závislostí dle README.md
+- Spuštění jednotlivých testů pomocí `pytest -s <název_testu.py>`
+
+## 6. Kritéria úspěšnosti
+- Všechny testy proběhnou bez chyb.
+- Očekávané stránky, texty a chování jsou ověřeny.

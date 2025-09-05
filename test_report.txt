@@ -1,0 +1,24 @@
+# Testovací report – září 2025
+
+Všechny automatizované testy byly úspěšně provedeny.
+
+## Výsledky testů
+
+- 🟢 **test_prvni.py** – Test funkčnosti hlavních tlačítek na RZP.gov.cz: ✔️ Úspěšně dokončeno
+- 🟢 **test_druhy.py** – Test vyhledání subjektu podle názvu: ✔️ Úspěšně dokončeno
+- 🟢 **test_tri.py** – Test vyhledání subjektu podle kódu živnosti a místa: ✔️ Úspěšně dokončeno
+- 🟢 **test_prihlaseni.py** – Test přihlášení na KCHT.cz s neplatnými údaji: ✔️ Úspěšně dokončeno
+
+## Shrnutí
+
+✅ Všechny testy proběhly bez chyb a ověřily požadovanou funkcionalitu.
+
+## Doporučení
+
+- Pravidelně spouštět testy při změnách v aplikaci
+- Udržovat testovací scénáře aktuální
+
+---
+
+Autor: Renato Vítek
+Datum: 5. září 2025
